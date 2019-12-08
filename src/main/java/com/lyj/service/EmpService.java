@@ -10,4 +10,6 @@ public interface EmpService {
     Integer findAllCount();
 
     void save(Emp emp);
+
+    void update(Emp emp);
 }

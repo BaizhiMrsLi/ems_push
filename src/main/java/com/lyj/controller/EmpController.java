@@ -56,5 +56,12 @@ public class EmpController {
                 e.printStackTrace();
             }
         }
+        if ("edit".equals(oper)) {
+            try {
+                empService.update(emp);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
     }
 }

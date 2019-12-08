@@ -30,6 +30,12 @@ public class EmpServiceImpl implements EmpService {
 
     @Override
     public void save(Emp emp) {
+        emp.setId(null);
         empDao.insert(emp);
+    }
+
+    @Override
+    public void update(Emp emp) {
+        empDao.updateByPrimaryKeySelective(emp);
     }
 }
