@@ -45,4 +45,16 @@ public class EmpController {
         map.put("records", records);
         return map;
     }
+
+
+    @RequestMapping("opt")
+    public void edit(Emp emp, String oper) {
+        if ("add".equals(oper)) {
+            try {
+                empService.save(emp);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+    }
 }

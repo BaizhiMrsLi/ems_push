@@ -8,4 +8,6 @@ public interface EmpService {
     List<Emp> findAll(Integer start, Integer size);
 
     Integer findAllCount();
+
+    void save(Emp emp);
 }

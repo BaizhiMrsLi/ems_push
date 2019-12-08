@@ -27,4 +27,9 @@ public class EmpServiceImpl implements EmpService {
     public Integer findAllCount() {
         return empDao.selectCount(new Emp());
     }
+
+    @Override
+    public void save(Emp emp) {
+        empDao.insert(emp);
+    }
 }
