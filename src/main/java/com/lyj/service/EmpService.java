@@ -12,4 +12,6 @@ public interface EmpService {
     void save(Emp emp);
 
     void update(Emp emp);
+
+    void delete(Emp emp);
 }

@@ -38,4 +38,9 @@ public class EmpServiceImpl implements EmpService {
     public void update(Emp emp) {
         empDao.updateByPrimaryKeySelective(emp);
     }
+
+    @Override
+    public void delete(Emp emp) {
+        empDao.delete(emp);
+    }
 }

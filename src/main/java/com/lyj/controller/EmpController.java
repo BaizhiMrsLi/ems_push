@@ -63,5 +63,12 @@ public class EmpController {
                 e.printStackTrace();
             }
         }
+        if ("del".equals(oper)) {
+            try {
+                empService.delete(emp);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
     }
 }
